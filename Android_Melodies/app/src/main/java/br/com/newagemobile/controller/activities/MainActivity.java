@@ -57,12 +57,18 @@ public class MainActivity extends ActionBarActivity {
         }
 
         tintNotificationBar(R.color.color_primary_dark);
+        tintTaskDescription(R.color.color_primary);
 
     }
 
     private void tintNotificationBar(int colorId) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getWindow().setStatusBarColor(getResources().getColor(colorId));
+        }
+    }
+
+    private void tintTaskDescription(int colorId) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             ActivityManager.TaskDescription tDesc =
                     new ActivityManager.TaskDescription(getResources().getString(R.string.app_name), null, getResources().getColor(colorId));
             this.setTaskDescription(tDesc);
