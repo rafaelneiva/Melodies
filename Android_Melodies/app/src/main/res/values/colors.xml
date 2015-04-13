@@ -17,9 +17,10 @@
     <color name="deep_purple">#673ab7</color>
     <color name="deep_purple_dark">#512da8</color>
 
-    <color name="color_primary_dark">#388E3C</color>
-    <color name="color_primary">#4CAF50</color>
-    <color name="color_primary_light">#B2FF59</color>
-    <color name="color_accent">#FFEB3B</color>
-    <color name="bg_dark">#4A4A4A</color>
+    <color name="color_accent">#D54160</color>
+    <color name="color_primary">#97CC04</color>
+    <color name="color_primary_dark">#6DA34D</color>
+    <color name="color_primary_darker">#426B69</color>
+    <color name="mine_shaft">#303030</color>
+    <color name="bg_dark">#303030</color>
 </resources>

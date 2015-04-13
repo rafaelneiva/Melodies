@@ -42,7 +42,7 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
 //        return titles[position];
 
-        SpannableStringBuilder sb = new SpannableStringBuilder("."); // space added before text for convenience
+        SpannableStringBuilder sb = new SpannableStringBuilder(" "); // space added before text for convenience
 
         myDrawables[position].setBounds(10, 10, myDrawables[position].getIntrinsicWidth(), myDrawables[position].getIntrinsicHeight());
         ImageSpan span = new ImageSpan(myDrawables[position], ImageSpan.ALIGN_BASELINE);

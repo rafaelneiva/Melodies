@@ -13,10 +13,11 @@
         android:layout_gravity="top"
         android:textSize="16sp"
         android:background="@color/color_primary"
-        app:pstsIndicatorColor="@color/color_primary_light"
+        app:pstsIndicatorColor="@color/color_primary_darker"
         app:pstsTextAllCaps="false"
-        app:pstsIndicatorHeight="1.5dp"
+        app:pstsIndicatorHeight="2dp"
         app:pstsPaddingMiddle="false"
+        app:pstsTextAlpha="0.3"
         app:pstsShouldExpand="true"/>
 
     <android.support.v4.view.ViewPager

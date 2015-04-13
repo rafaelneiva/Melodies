@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:fab="http://schemas.android.com/apk/res-auto"
              android:layout_width="match_parent"
              android:id="@+id/content_frame"
              android:layout_height="match_parent">
@@ -17,7 +18,7 @@
             android:buttonTint="@color/color_accent"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="128dp" />
+            android:layout_marginTop="128dp"/>
 
 
         <android.support.v7.widget.SwitchCompat
@@ -31,7 +32,7 @@
             android:checked="true"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp" />
+            android:layout_marginTop="20dp"/>
 
         <android.support.v7.internal.widget.TintEditText
             android:id="@+id/tintedittxt"
@@ -42,7 +43,7 @@
             android:text="Sample EditText"
             android:layout_marginTop="20dp"
             android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"/>
 
         <android.support.v7.internal.widget.TintRadioButton
             android:id="@+id/tintradio"
@@ -53,10 +54,22 @@
             android:buttonTint="@color/color_accent"
             android:layout_centerVertical="true"
             android:layout_marginTop="20dp"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"/>
 
 
     </RelativeLayout>
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/ic_add_white"
+        fab:fab_colorNormal="@color/color_accent"
+        fab:fab_colorPressed="@color/color_accent"
+        fab:fab_colorRipple="@color/color_primary"/>
 
 
 </FrameLayout>
