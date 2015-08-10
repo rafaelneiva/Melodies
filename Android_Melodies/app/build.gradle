@@ -1,5 +1,7 @@
 apply plugin: 'com.android.application'
 
+apply plugin: "sonar-runner"
+
 android {
     compileSdkVersion 22
     buildToolsVersion '22.0.1'
@@ -27,4 +29,29 @@ dependencies {
     compile 'com.google.code.gson:gson:2.3'
     compile 'org.apache.httpcomponents:httpclient-android:4.3.3'
     compile files('libs/volley.jar')
+}
+
+sonarRunner {
+    sonarProperties {
+        property "sonar.host.url", "http://localhost:9000/"
+        property "sonar.jdbc.url", "jdbc:mysql://localhost:9000/sonarqube?useUnicode=true"
+        property "sonar.jdbc.driverClassName", "com.mysql.jdbc.Driver"
+        property "sonar.profile", "Android Lint"
+        property "sonar.projectName", "Android_Melodies"
+        property "sonar.projectKey", "br.com.newagemobile.melodies"
+        property "sonar.projectVersion", "1.0.0-SNAPSHOT"
+        property "sonar.language", "java"
+        property "sonar.sources", "src"
+        property "sonar.binaries", "build"
+        property "sonar.android.lint.report", "build/outputs/lint-results.xml"
+    }
+}
+
+subprojects {
+    sonarRunner {
+        sonarProperties {
+            property "sonar.sourceEncoding", "UTF-8"
+            property "sonar.sources", "src/main"
+        }
+    }
 }
