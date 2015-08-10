@@ -19,10 +19,10 @@ import br.com.newagemobile.controller.adapters.ViewPagerAdapter;
  */
 public class ViewPagerFragment extends Fragment {
 
-    ViewPager mPager;
     private String tabtitles[] = new String[]{"Sample Tab 1", "Sample Tab 2", "Sample Tab 3"};
     Drawable mDrawable[];
 
+    ViewPager mPager;
     public PagerSlidingTabStrip mPagerTab;
 
     public static ViewPagerFragment newInstance() {
