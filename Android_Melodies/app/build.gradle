@@ -19,6 +19,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    lintOptions {
+        // Don't abort if Lint finds an error, otherwise the Jenkins build
+        // will be marked as failed, and Jenkins won't analyse the Lint output
+        abortOnError false
+    }
 }
 
 dependencies {
@@ -34,8 +39,6 @@ dependencies {
 sonarRunner {
     sonarProperties {
         property "sonar.host.url", "http://localhost:9000/"
-//        property "sonar.jdbc.url", "jdbc:mysql://localhost:9000/sonarqube?useUnicode=true"
-//        property "sonar.jdbc.driverClassName", "com.mysql.jdbc.Driver"
         property "sonar.profile", "Android Lint"
         property "sonar.projectName", "Android_Melodies"
         property "sonar.projectKey", "br.com.newagemobile.melodies"
