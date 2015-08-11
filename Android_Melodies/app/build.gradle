@@ -44,7 +44,7 @@ sonarRunner {
         property "sonar.projectVersion", "1.0.0-SNAPSHOT"
         property "sonar.language", "java"
         property "sonar.profile", "Android Lint"
-        property "sonar.sources", "src/main/java"
+        property "sonar.sources", "src/main/res"
         property "sonar.java.binaries", "build"
         property "sonar.android.lint.report", "lint-results.xml"
     }
