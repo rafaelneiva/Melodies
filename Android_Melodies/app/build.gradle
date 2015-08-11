@@ -39,7 +39,6 @@ dependencies {
 sonarRunner {
     sonarProperties {
         property "sonar.host.url", "http://localhost:9000/"
-        property "sonar.profile", "Android Lint"
         property "sonar.projectName", "Android_Melodies"
         property "sonar.projectKey", "br.com.newagemobile.melodies"
         property "sonar.projectVersion", "1.0.0-SNAPSHOT"
@@ -47,7 +46,6 @@ sonarRunner {
         property "sonar.sources", "src/main/java"
         property "sonar.java.binaries", "build"
         property "sonar.android.lint.report", "build/outputs/lint-results.xml"
-        property "sonar.libraries", "libs"
     }
 }
 
