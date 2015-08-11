@@ -34,14 +34,12 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
                 return SampleFragment.newInstance();
             case 2:
                 return SampleFragment.newInstance();
-
+            default:
+                return SampleFragment.newInstance();
         }
-        return null;
     }
 
     public CharSequence getPageTitle(int position) {
-//        return titles[position];
-
         SpannableStringBuilder sb = new SpannableStringBuilder(" "); // space added before text for convenience
 
         myDrawables[position].setBounds(10, 10, myDrawables[position].getIntrinsicWidth(), myDrawables[position].getIntrinsicHeight());
