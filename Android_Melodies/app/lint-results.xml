@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<issues format="4" by="lint 24.1.2">
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/fragment_sample.xml</file>
+    <line>43</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_sample.xml" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Hardcoded text</problem_class>
+    <hints />
+    <description>&lt;html&gt;[I18N] Hardcoded string &quot;Sample EditText&quot;, should use &lt;code&gt;@string&lt;/code&gt; resource&lt;/html&gt;</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/res/layout/fragment_sample.xml</file>
+    <line>53</line>
+    <module>app</module>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_sample.xml" />
+    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Hardcoded text</problem_class>
+    <hints />
+    <description>&lt;html&gt;[I18N] Hardcoded string &quot;Sample Text&quot;, should use &lt;code&gt;@string&lt;/code&gt; resource&lt;/html&gt;</description>
+  </problem>
+</problems>
 
-    <issue
-        id="LintError"
-        severity="Fatal"
-        message="&quot;`main`&quot; is a Gradle project. To correctly analyze Gradle projects, you should run &quot;`gradlew :lint`&quot; instead."
-        category="Lint"
-        priority="10"
-        summary="Lint Failure"
-        explanation="This issue type represents a problem running lint itself. Examples include failure to find bytecode for source files (which means certain detectors could not be run), parsing errors in lint configuration files, etc.
-These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed.">
-        <location
-            file="main"/>
-    </issue>
-
-</issues>
