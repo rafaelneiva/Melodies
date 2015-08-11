@@ -47,6 +47,7 @@ sonarRunner {
         property "sonar.sources", "src/main/java"
         property "sonar.java.binaries", "build"
         property "sonar.android.lint.report", "build/outputs/lint-results.xml"
+        property "sonar.libraries", "libs"
     }
 }
 
