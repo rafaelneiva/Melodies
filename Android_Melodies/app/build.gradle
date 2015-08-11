@@ -54,7 +54,7 @@ sonarqube {
         property "sonar.projectKey", "br.com.newagemobile.melodies"
         property "sonar.projectVersion", "1.0.0-SNAPSHOT"
         property "sonar.language", "java"
-        property "sonar.profile", "Android Lint"
+//        property "sonar.profile", "Android Lint"
         property "sonar.sources", "src/main/java"
         property "sonar.java.binaries", "build"
         property "sonar.android.lint.report", "lint-results.xml"
