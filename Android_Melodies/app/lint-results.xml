@@ -1,22 +1,211 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<problems>
-  <problem>
-    <file>file://$PROJECT_DIR$/app/src/main/res/layout/fragment_sample.xml</file>
-    <line>43</line>
-    <module>app</module>
-    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_sample.xml" />
-    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Hardcoded text</problem_class>
-    <hints />
-    <description>&lt;html&gt;[I18N] Hardcoded string &quot;Sample EditText&quot;, should use &lt;code&gt;@string&lt;/code&gt; resource&lt;/html&gt;</description>
-  </problem>
-  <problem>
-    <file>file://$PROJECT_DIR$/app/src/main/res/layout/fragment_sample.xml</file>
-    <line>53</line>
-    <module>app</module>
-    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_sample.xml" />
-    <problem_class severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Hardcoded text</problem_class>
-    <hints />
-    <description>&lt;html&gt;[I18N] Hardcoded string &quot;Sample Text&quot;, should use &lt;code&gt;@string&lt;/code&gt; resource&lt;/html&gt;</description>
-  </problem>
-</problems>
+<issues format="4" by="lint 24.1.2">
 
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.background_tab` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="app/build/intermediates/exploded-aar/com.jpardogo.materialtabstrip/library/1.0.8/res/drawable/background_tab.xml"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.anim.fab_scale_down` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="app/build/intermediates/exploded-aar/com.github.clans/fab/1.2.0/res/anim/fab_scale_down.xml"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.anim.fab_scale_up` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="app/build/intermediates/exploded-aar/com.github.clans/fab/1.2.0/res/anim/fab_scale_up.xml"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.anim.fab_slide_in_from_right` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="app/build/intermediates/exploded-aar/com.github.clans/fab/1.2.0/res/anim/fab_slide_in_from_right.xml"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.anim.fab_slide_out_to_right` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="app/build/intermediates/exploded-aar/com.github.clans/fab/1.2.0/res/anim/fab_slide_out_to_right.xml"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.layout.tab` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="app/build/intermediates/exploded-aar/com.jpardogo.materialtabstrip/library/1.0.8/res/layout/tab.xml"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.dimen.fab_size_mini` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;dimen name=&quot;fab_size_mini&quot;>40dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="app/build/intermediates/exploded-aar/com.github.clans/fab/1.2.0/res/values/values.xml"
+            line="7"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.dimen.fab_size_normal` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;dimen name=&quot;fab_size_normal&quot;>56dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="app/build/intermediates/exploded-aar/com.github.clans/fab/1.2.0/res/values/values.xml"
+            line="8"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.dimen.labels_text_size` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;dimen name=&quot;labels_text_size&quot;>14sp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="app/build/intermediates/exploded-aar/com.github.clans/fab/1.2.0/res/values/values.xml"
+            line="9"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="MissingApplicationIcon"
+        severity="Warning"
+        message="Should explicitly set `android:icon`, there is no default"
+        category="Usability:Icons"
+        priority="5"
+        summary="Missing application icon"
+        explanation="You should set an icon for the application as whole because there is no default. This attribute must be set as a reference to a drawable resource containing the image (for example `@drawable/icon`)."
+        url="http://developer.android.com/tools/publishing/preparing.html#publishing-configure"
+        urls="http://developer.android.com/tools/publishing/preparing.html#publishing-configure"
+        quickfix="studio">
+        <location
+            file="app/build/intermediates/exploded-aar/com.ogaclejapan.smarttablayout/library/1.1.0/AndroidManifest.xml"/>
+    </issue>
+
+    <issue
+        id="MissingApplicationIcon"
+        severity="Warning"
+        message="Should explicitly set `android:icon`, there is no default"
+        category="Usability:Icons"
+        priority="5"
+        summary="Missing application icon"
+        explanation="You should set an icon for the application as whole because there is no default. This attribute must be set as a reference to a drawable resource containing the image (for example `@drawable/icon`)."
+        url="http://developer.android.com/tools/publishing/preparing.html#publishing-configure"
+        urls="http://developer.android.com/tools/publishing/preparing.html#publishing-configure"
+        quickfix="studio">
+        <location
+            file="app/build/intermediates/exploded-aar/com.ogaclejapan.smarttablayout/utils-v4/1.1.0/AndroidManifest.xml"/>
+    </issue>
+
+    <issue
+        id="MissingApplicationIcon"
+        severity="Warning"
+        message="Should explicitly set `android:icon`, there is no default"
+        category="Usability:Icons"
+        priority="5"
+        summary="Missing application icon"
+        explanation="You should set an icon for the application as whole because there is no default. This attribute must be set as a reference to a drawable resource containing the image (for example `@drawable/icon`)."
+        url="http://developer.android.com/tools/publishing/preparing.html#publishing-configure"
+        urls="http://developer.android.com/tools/publishing/preparing.html#publishing-configure"
+        errorLine1="    &lt;application>"
+        errorLine2="    ^"
+        quickfix="studio">
+        <location
+            file="app/build/intermediates/manifests/test/debug/AndroidManifest.xml"
+            line="7"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="MissingApplicationIcon"
+        severity="Warning"
+        message="Should explicitly set `android:icon`, there is no default"
+        category="Usability:Icons"
+        priority="5"
+        summary="Missing application icon"
+        explanation="You should set an icon for the application as whole because there is no default. This attribute must be set as a reference to a drawable resource containing the image (for example `@drawable/icon`)."
+        url="http://developer.android.com/tools/publishing/preparing.html#publishing-configure"
+        urls="http://developer.android.com/tools/publishing/preparing.html#publishing-configure"
+        errorLine1="    &lt;application />"
+        errorLine2="    ~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="app/build/intermediates/exploded-aar/com.jpardogo.materialtabstrip/library/1.0.8/AndroidManifest.xml"
+            line="9"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="MissingApplicationIcon"
+        severity="Warning"
+        message="Should explicitly set `android:icon`, there is no default"
+        category="Usability:Icons"
+        priority="5"
+        summary="Missing application icon"
+        explanation="You should set an icon for the application as whole because there is no default. This attribute must be set as a reference to a drawable resource containing the image (for example `@drawable/icon`)."
+        url="http://developer.android.com/tools/publishing/preparing.html#publishing-configure"
+        urls="http://developer.android.com/tools/publishing/preparing.html#publishing-configure"
+        errorLine1="    &lt;application />"
+        errorLine2="    ~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="app/build/intermediates/exploded-aar/com.github.clans/fab/1.2.0/AndroidManifest.xml"
+            line="12"
+            column="5"/>
+    </issue>
+
+</issues>
