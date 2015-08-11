@@ -57,6 +57,6 @@ sonarqube {
 //        property "sonar.profile", "Android Lint"
         property "sonar.sources", "src/main/java"
         property "sonar.java.binaries", "build"
-        property "sonar.android.lint.report", "lint-results.xml"
+//        property "sonar.android.lint.report", "lint-results.xml"
     }
 }
