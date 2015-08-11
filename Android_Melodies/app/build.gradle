@@ -1,6 +1,5 @@
 apply plugin: 'com.android.application'
-
-apply plugin: "sonar-runner"
+apply plugin: 'org.sonarqube'
 
 android {
     compileSdkVersion 22
@@ -26,6 +25,17 @@ android {
     }
 }
 
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "org.sonarqube.gradle:gradle-sonarqube-plugin:1.0"
+    }
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.0.0'
@@ -36,25 +46,16 @@ dependencies {
     compile files('libs/volley.jar')
 }
 
-sonarRunner {
-    sonarProperties {
+sonarqube {
+    properties {
         property "sonar.host.url", "http://localhost:9000/"
         property "sonar.projectName", "Android_Melodies"
         property "sonar.projectKey", "br.com.newagemobile.melodies"
         property "sonar.projectVersion", "1.0.0-SNAPSHOT"
-        property "sonar.language", "java"
+        property "sonar.language", "xml"
         property "sonar.profile", "Android Lint"
         property "sonar.sources", "src/main/res"
         property "sonar.java.binaries", "build"
         property "sonar.android.lint.report", "lint-results.xml"
-    }
-}
-
-subprojects {
-    sonarRunner {
-        sonarProperties {
-            property "sonar.sourceEncoding", "UTF-8"
-            property "sonar.sources", "src/main"
-        }
     }
 }
