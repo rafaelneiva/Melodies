@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'org.sonarqube'
+apply plugin: 'sonarqube-runner'
 
 android {
     compileSdkVersion 22
