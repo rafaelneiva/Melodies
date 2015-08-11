@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/br/com/newagemobile/service/AppController.java</file>
+    <line>17</line>
+    <module>app</module>
+    <package>br.com.newagemobile.service</package>
+    <entry_point TYPE="class" FQNAME="br.com.newagemobile.service.AppController" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+    <hints>
+      <hint value="comment" />
+      <hint value="delete" />
+    </hints>
+    <description>Class is not instantiated.</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/br/com/newagemobile/service/SerializableCookie.java</file>
+    <line>41</line>
+    <module>app</module>
+    <package>br.com.newagemobile.service</package>
+    <entry_point TYPE="method" FQNAME="br.com.newagemobile.service.SerializableCookie void readObject(java.io.ObjectInputStream in)" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+    <hints>
+      <hint value="comment" />
+      <hint value="delete" />
+    </hints>
+    <description>&lt;ul&gt;&lt;li&gt;Method owner class is never instantiated OR&lt;/li&gt;&lt;li&gt;An instantiation is not reachable from entry points.&lt;/li&gt;&lt;/ul&gt;</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/br/com/newagemobile/service/SerializableCookie.java</file>
+    <line>30</line>
+    <module>app</module>
+    <package>br.com.newagemobile.service</package>
+    <entry_point TYPE="method" FQNAME="br.com.newagemobile.service.SerializableCookie void writeObject(java.io.ObjectOutputStream out)" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+    <hints>
+      <hint value="comment" />
+      <hint value="delete" />
+    </hints>
+    <description>&lt;ul&gt;&lt;li&gt;Method owner class is never instantiated OR&lt;/li&gt;&lt;li&gt;An instantiation is not reachable from entry points.&lt;/li&gt;&lt;/ul&gt;</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/br/com/newagemobile/service/SerializableCookie.java</file>
+    <line>13</line>
+    <module>app</module>
+    <package>br.com.newagemobile.service</package>
+    <entry_point TYPE="field" FQNAME="br.com.newagemobile.service.SerializableCookie serialVersionUID" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+    <hints>
+      <hint value="comment" />
+      <hint value="delete" />
+    </hints>
+    <description>Field has no usages.</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/br/com/newagemobile/controller/activities/MainActivity.java</file>
+    <line>19</line>
+    <module>app</module>
+    <package>br.com.newagemobile.controller.activities</package>
+    <entry_point TYPE="class" FQNAME="br.com.newagemobile.controller.activities.MainActivity" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+    <hints>
+      <hint value="comment" />
+      <hint value="delete" />
+    </hints>
+    <description>Class is not instantiated.</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/br/com/newagemobile/controller/activities/MainActivity.java</file>
+    <line>97</line>
+    <module>app</module>
+    <package>br.com.newagemobile.controller.activities</package>
+    <entry_point TYPE="method" FQNAME="br.com.newagemobile.controller.activities.MainActivity.SplashsFragment SplashsFragment()" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+    <hints>
+      <hint value="comment" />
+      <hint value="delete" />
+    </hints>
+    <description>Constructor has one usage but it is not reachable from entry points.</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/androidTest/java/br/com/newagemobile/ApplicationTest.java</file>
+    <line>10</line>
+    <module>app</module>
+    <package>br.com.newagemobile</package>
+    <entry_point TYPE="method" FQNAME="br.com.newagemobile.ApplicationTest ApplicationTest()" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+    <hints>
+      <hint value="comment" />
+      <hint value="delete" />
+    </hints>
+    <description>Constructor is never used.</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/androidTest/java/br/com/newagemobile/ApplicationTest.java</file>
+    <line>9</line>
+    <module>app</module>
+    <package>br.com.newagemobile</package>
+    <entry_point TYPE="class" FQNAME="br.com.newagemobile.ApplicationTest" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+    <hints>
+      <hint value="comment" />
+      <hint value="delete" />
+    </hints>
+    <description>Class is not instantiated.</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/br/com/newagemobile/service/AppController.java</file>
+    <line>17</line>
+    <module>app</module>
+    <package>br.com.newagemobile.service</package>
+    <entry_point TYPE="class" FQNAME="br.com.newagemobile.service.AppController" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+    <hints>
+      <hint value="comment" />
+      <hint value="delete" />
+    </hints>
+    <description>Class is not instantiated.</description>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/app/src/main/java/br/com/newagemobile/controller/activities/MainActivity.java</file>
+    <line>19</line>
+    <module>app</module>
+    <package>br.com.newagemobile.controller.activities</package>
+    <entry_point TYPE="class" FQNAME="br.com.newagemobile.controller.activities.MainActivity" />
+    <problem_class severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">unused declaration</problem_class>
+    <hints>
+      <hint value="comment" />
+      <hint value="delete" />
+    </hints>
+    <description>Class is not instantiated.</description>
+  </problem>
+</problems>
+
